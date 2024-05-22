@@ -1,0 +1,4 @@
+export {default as Home} from './Home/Home'
+export{default as Login} from '../Pages/Login/Login'
+export {default as SignUp} from '../Pages/SignUp/SignUp'
+export {default as HomeSignedin} from '../Pages/HomeSignedin/HomeSignedin'

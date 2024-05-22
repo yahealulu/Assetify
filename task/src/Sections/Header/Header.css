@@ -1,0 +1,104 @@
+.Header {
+  background-color: #fff;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.HeaderBar {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Logo img {
+  max-height: 50px;
+}
+
+.NavbarWrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  order: 3;
+}
+
+.Navbar {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center; /* Ensure vertical alignment */
+}
+
+.Navbar li {
+  font-size: 18px;
+  color: #161d6f;
+}
+
+.ButtonGroup {
+  display: flex;
+  gap: 10px;
+  order: 1;
+  padding-left: 15px;
+}
+
+.MenuToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  order: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .NavbarWrapper {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .NavbarWrapper.open {
+    display: flex;
+  }
+
+  .Navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ButtonGroup {
+    margin-top: 10px;
+    order: 3;
+  }
+
+  .MenuToggle {
+    display: block;
+  }
+
+  .Logo {
+    order: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .Header {
+    padding: 10px 20px;
+  }
+
+  .Logo img {
+    max-height: 40px;
+  }
+
+  .Navbar li {
+    font-size: 16px;
+  }
+}

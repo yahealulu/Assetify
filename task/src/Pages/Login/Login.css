@@ -1,0 +1,116 @@
+/* Login.css */
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(119.36deg, rgba(10, 14, 63, 0.45) 13.83%, rgba(107, 72, 255, 0.45) 85.83%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.image-section {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.form-section {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  width: 85%;
+  padding: 10px;
+  margin-left:10px ;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+.options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.options a {
+  color: #161D6F;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.social-login span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-buttons button {
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .login-container {
+    flex-direction: row;
+    height: 450px;
+  }
+
+  .image-section {
+    flex: 1;
+    height: auto;
+  }
+
+  .form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

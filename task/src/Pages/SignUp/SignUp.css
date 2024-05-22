@@ -1,0 +1,179 @@
+/* SignUp.css */
+
+.sign-up-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+  
+  .imgww {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+  
+  .form-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+  }
+  
+  .form-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .drag-drop-areas {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  
+  .drag-drop-area {
+    width: 200px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(107, 72, 255, 0.2);
+  }
+  
+  .drag-drop-area span {
+    color: rgba(95, 95, 95, 1);
+  }
+  
+  .drag-drop-area input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1EE3CF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .submit-button:hover {
+    background-color: #1ECFDF;
+  }
+  
+  .form-container p {
+    margin-bottom: 15px;
+  }
+  
+  .form-container a {
+    color: #1EE3CF;
+    text-decoration: none;
+  }
+  
+  .social-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .sign-up-container {
+      flex-direction: column;
+    }
+  
+    .imgww {
+      width: 0%;
+      height: 200px;
+      border-radius: 0;
+    }
+  
+    .form-container {
+      width: 100%;
+      padding: 20px;
+      box-shadow: none;
+      background-image: url('../../assets/images/Rectangle\ 82.png');
+    }
+  
+    .form-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .drag-drop-areas {
+        order: 2;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 10px;
+    }
+  
+    .input-field {
+      padding: 8px;
+    }
+  
+    .submit-button {
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .drag-drop-area {
+      width: 100%;
+      padding: 15px;
+      order: 2;
+    }
+  
+    .input-field {
+      margin-bottom: 10px;
+    }
+  
+    .submit-button {
+      margin-bottom: 10px;
+    }
+  
+    .social-buttons {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  

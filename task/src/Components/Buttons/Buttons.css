@@ -1,0 +1,77 @@
+.Buttons{
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: space-between;
+  }
+a{
+  text-decoration: none;
+}
+  .signButton {
+    font-family: Noor, sans-serif;
+    border-radius: 6.038px;
+    border-color: rgba(22, 29, 111, 1);
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f2f4f6;
+    color: #161d6f;
+    justify-content: center;
+    padding: 9px 25px;
+    font-weight: 1000  ;
+  }
+  
+  @media (max-width: 991px) {
+    .signButton {
+      padding: 0 20px;
+    }
+  }
+    .start{
+    flex-wrap: wrap;
+    font-family: Noor, sans-serif;
+    border-radius: 6.038px;
+    background-color: #161d6f;
+    color: #1ee3cf;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 8px 21px;
+  }
+  @media (max-width: 991px) {
+    .start {
+      
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  .login-button {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #1EE3CF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding-left: 130px;
+    padding-right: 130px;
+    margin-left: 22px;
+  }
+.google-login {
+  background-color: #F2F4F6;
+  color: #000000;
+}
+
+.apple-login {
+  background-color: #000000;
+  color: white;
+}
+
+.facebook-login {
+  background-color: #1877F2;
+  color: white;
+}
+.sm{
+  padding-top: 11px;
+padding-left: 3px;
+}
