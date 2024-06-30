@@ -1,19 +1,22 @@
-import './Home.css'
-import { Body, Footer, Header } from '../../Sections/index';
+import './Home.css';
+import { Body, Footer, Header, NHeader } from '../../Sections/index';
 import { Bodycontent } from '../../Components';
-
+import { useLocation } from 'react-router-dom';
 
 const Home = () => {
+
+  const location = useLocation();
+  const isloggedin = location.state?.isloggedin || false;
+
   return (
     <>
-        <Header/>
-    <Body>
-      <Bodycontent/>
-    </Body>
-    <Footer/>
+      {isloggedin ? <NHeader /> : <Header />}
+      <Body>
+        <Bodycontent /> 
+      </Body>
+      <Footer /> 
     </>
-
   )
 }
 
-export default Home
+export default Home;

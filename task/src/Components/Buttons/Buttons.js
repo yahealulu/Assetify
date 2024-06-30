@@ -23,6 +23,7 @@ const SignButton = () => {
 }
 
 const SignOutButton = () => {
+  
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   const handleSignOutClick = () => {
@@ -89,9 +90,8 @@ const FacebookButton = () => {
 
 const LoginButton = () => {
   return (
-    <Link to='/HomeSignedIp'>
       <button type="submit" className="login-button">تسجيل الدخول</button>
-    </Link>
+    
   );
 }
 

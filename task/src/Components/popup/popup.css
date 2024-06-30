@@ -72,6 +72,24 @@ border-top-left-radius: 19px;
     line-height: 28.8px;
     text-align: center;
   }
+  .input-fieldemail {
+    width: 90%;
+    padding: 10px;
+    margin-left: 25PX;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .delete-button {
+    background-color: #ee0909;
+    color: white;
+    font-family: Noor;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+  }
   
   .cancel-button {
     background-color: #E0E0E0;

@@ -8,7 +8,11 @@
   align-items: center;
   height: 100vh;
 }
-
+.loader{
+  padding-left: 500px;
+  padding-top: 150px; 
+  max-width: 30%;
+}
 .login-container {
   display: flex;
   flex-direction: column;
@@ -100,7 +104,11 @@ form {
     flex-direction: row;
     height: 450px;
   }
-
+  .loader{
+    padding-left: 500px;
+    padding-top: 150px; 
+    max-width: 30%;
+  }
   .image-section {
     flex: 1;
     height: auto;

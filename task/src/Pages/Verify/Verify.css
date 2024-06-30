@@ -1,0 +1,99 @@
+.verify-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ background-color: #0A0E3FF2;
+background-blend-mode: luminosity;
+background: linear-gradient(180deg, rgba(22, 29, 111, 0.8) 43.77%, rgba(107, 72, 255, 0.8) 162.11%);
+
+  }
+  
+  .image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/images/analog-landscape-city-with-buildings.jpeg') no-repeat center center/cover;
+    z-index: 1;
+    opacity: 0.5;
+  }
+  
+  .verify-box {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .welcome-text {
+    color: #8c52ff;
+    margin-bottom: 1rem;
+  }
+  
+  .instruction-text {
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .email-text {
+    color: #8c52ff;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .code-input {
+    width: 2rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .confirm-button {
+    background-color: #00d8d6;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .confirm-button:hover {
+    background-color: #00b3b1;
+  }
+  
+  .resend-container {
+    margin-top: 1rem;
+  }
+  
+  .resend-instruction {
+    color: #666;
+  }
+  
+  .timer {
+    color: #8c52ff;
+  }
+  
+  .resend-button {
+    background-color: #fff;
+    color: #00d8d6;
+    border: 1px solid #00d8d6;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .resend-button:hover {
+    background-color: #00d8d6;
+    color: #fff;
+  }
+  
