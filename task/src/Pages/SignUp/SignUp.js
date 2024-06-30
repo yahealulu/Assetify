@@ -88,7 +88,7 @@ const SignUp = () => {
             <div className="drag-drop-area">
               <input type="file" id="personalID" onChange={handlePersonalIDUpload} />
               <label htmlFor="personalID">
-                اسحب و أفلت الصورة هنا أو قم برفعها من الملفات
+                اسحب و أفلت البي دي اف هنا أو قم برفعه من الملفات
                 <br />
                 <span> 1MB:الحجم الاقصى</span>
               </label>
